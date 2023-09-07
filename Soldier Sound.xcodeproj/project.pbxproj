@@ -22,7 +22,7 @@
 		641AC7A82AA8E7160003C779 /* bullets.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 641AC7A32AA8E7160003C779 /* bullets.mp3 */; };
 		641AC7A92AA8E7160003C779 /* hasta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 641AC7A42AA8E7160003C779 /* hasta.mp3 */; };
 		641AC7AB2AA8E8E40003C779 /* gym.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 641AC7AA2AA8E8E40003C779 /* gym.mp3 */; };
-		645E9D562AAA285A002EA936 /* videoplayback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 645E9D552AAA285A002EA936 /* videoplayback.mp4 */; };
+		642477882AAA7CCA00758392 /* videoplayback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 642477872AAA7CCA00758392 /* videoplayback.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 		641AC7A32AA8E7160003C779 /* bullets.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bullets.mp3; sourceTree = "<group>"; };
 		641AC7A42AA8E7160003C779 /* hasta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hasta.mp3; sourceTree = "<group>"; };
 		641AC7AA2AA8E8E40003C779 /* gym.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gym.mp3; sourceTree = "<group>"; };
-		645E9D552AAA285A002EA936 /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
+		642477872AAA7CCA00758392 /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +113,11 @@
 		641AC76E2AA8DC600003C779 /* Soldier Sound */ = {
 			isa = PBXGroup;
 			children = (
-				645E9D552AAA285A002EA936 /* videoplayback.mp4 */,
 				641AC79F2AA8E7160003C779 /* Soldier sounds */,
 				641AC76F2AA8DC600003C779 /* AppDelegate.swift */,
 				641AC7712AA8DC600003C779 /* SceneDelegate.swift */,
 				641AC7732AA8DC600003C779 /* ViewController.swift */,
+				642477872AAA7CCA00758392 /* videoplayback.mp4 */,
 				641AC7752AA8DC600003C779 /* Main.storyboard */,
 				641AC7782AA8DC620003C779 /* Assets.xcassets */,
 				641AC77A2AA8DC620003C779 /* LaunchScreen.storyboard */,
@@ -264,9 +264,9 @@
 				641AC7A92AA8E7160003C779 /* hasta.mp3 in Resources */,
 				641AC7A62AA8E7160003C779 /* gun.mp3 in Resources */,
 				641AC77C2AA8DC620003C779 /* LaunchScreen.storyboard in Resources */,
-				645E9D562AAA285A002EA936 /* videoplayback.mp4 in Resources */,
 				641AC7A72AA8E7160003C779 /* protein.mp3 in Resources */,
 				641AC7A82AA8E7160003C779 /* bullets.mp3 in Resources */,
+				642477882AAA7CCA00758392 /* videoplayback.mp4 in Resources */,
 				641AC7792AA8DC620003C779 /* Assets.xcassets in Resources */,
 				641AC7A52AA8E7160003C779 /* weapon.mp3 in Resources */,
 				641AC7772AA8DC600003C779 /* Main.storyboard in Resources */,
@@ -478,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5434B2Q4KR;
+				DEVELOPMENT_TEAM = 65C7QD3FQZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Soldier Sound/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -492,7 +492,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "wickhersttyler.Soldier-Sound";
+				PRODUCT_BUNDLE_IDENTIFIER = "tylerwickherst.Soldier-Sound";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -507,7 +507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5434B2Q4KR;
+				DEVELOPMENT_TEAM = 65C7QD3FQZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Soldier Sound/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -521,7 +521,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "wickhersttyler.Soldier-Sound";
+				PRODUCT_BUNDLE_IDENTIFIER = "tylerwickherst.Soldier-Sound";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -573,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 65C7QD3FQZ;
@@ -591,6 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 65C7QD3FQZ;

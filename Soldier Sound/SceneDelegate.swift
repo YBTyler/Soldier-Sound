@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Soldier Sound
+//  Skibidi Toilet
 //
-//  Created by Tyler Wickherst on 9/6/23.
+//  Created by Tyler Wickherst on 9/5/23.
 //
 
 import UIKit
@@ -44,9 +44,50 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidEnterBackground(_ scene: UIScene) {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
+        // to restore the scene back to its current state
+        
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
+            
+            if let error = error {
+                print("error in notification authorization")
+            }
+            
+           
+        }
+        
+        
+        triggerLocalNotification(title: "Soldier Sound", body: "I need more bullets!")
     }
 
-
+        
 }
 
+
+
+extension SceneDelegate {
+    
+    private func triggerLocalNotification(title: String, body: String) {
+        
+        // noti content definition
+        let content = UNMutableNotificationContent()
+        content.body = body
+        content.title = title
+        content.sound = .default
+        
+        //noti trigger
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3600, repeats: true)
+        // noti creation
+        let localNRequest = UNNotificationRequest(identifier: "local notification", content: content, trigger: trigger)
+        //Notification add
+        UNUserNotificationCenter.current().add(localNRequest) { (error) in
+            if let error = error {
+                print("Error: ", error.localizedDescription)
+            } else {
+                NSLog("Notifcation Scheduled")
+            }
+        }
+        
+    }
+    
+}

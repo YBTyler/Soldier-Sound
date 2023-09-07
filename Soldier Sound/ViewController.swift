@@ -13,7 +13,6 @@ import AVKit
 class ViewController: UIViewController {
     
     var player: AVAudioPlayer!
-    var videoPlayer: AVPlayer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +43,16 @@ class ViewController: UIViewController {
         gymSound()
     }
     @IBAction func videoButton(_ sender: UIButton) {
+        guard let path = Bundle.main.path(forResource: "videoplayback", ofType: "mp4") else {
+            print("error")
+            return
+        }
+        let vidPlayer = AVPlayer.init(url: URL(filePath: path))
+        let playerController = AVPlayerViewController()
+        playerController.player = vidPlayer
+        present(playerController, animated: true){
+            vidPlayer.play()
+        }
     }
     
 
@@ -82,13 +91,6 @@ class ViewController: UIViewController {
         let url = Bundle.main.url(forResource:"gym", withExtension: "mp3")
         player = try! AVAudioPlayer(contentsOf:url!)
         player!.play()
-    }
-    
-    func videoButton(){
-        let url = Bundle.main.url(forResource:"videoplayback", withExtension: "mp4")
-        videoPlayer = try! AVPlayer(url:url!)
-        videoPlayer!.play()
-        let layer = AVPlayerLayer(player: AVPlayer?)
     }
 
    
