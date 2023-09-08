@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "bullet.png",
+      "filename" : "bullets.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
