@@ -55,6 +55,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func horseSound(_ sender: UIButton) {
+        horseSound()
+    }
+    
 
     
     func bulletsSound(){
@@ -93,6 +97,11 @@ class ViewController: UIViewController {
         player!.play()
     }
 
-   
+    func horseSound(){
+        let url = Bundle.main.url(forResource:"horse", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf:url!)
+        player!.play()
+    }
+    
 }
 

@@ -23,6 +23,7 @@
 		641AC7A92AA8E7160003C779 /* hasta.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 641AC7A42AA8E7160003C779 /* hasta.mp3 */; };
 		641AC7AB2AA8E8E40003C779 /* gym.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 641AC7AA2AA8E8E40003C779 /* gym.mp3 */; };
 		642477882AAA7CCA00758392 /* videoplayback.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 642477872AAA7CCA00758392 /* videoplayback.mp4 */; };
+		6424778A2AAAC12800758392 /* horse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 642477892AAAC12800758392 /* horse.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		641AC7A42AA8E7160003C779 /* hasta.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hasta.mp3; sourceTree = "<group>"; };
 		641AC7AA2AA8E8E40003C779 /* gym.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gym.mp3; sourceTree = "<group>"; };
 		642477872AAA7CCA00758392 /* videoplayback.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videoplayback.mp4; sourceTree = "<group>"; };
+		642477892AAAC12800758392 /* horse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = horse.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		641AC79F2AA8E7160003C779 /* Soldier sounds */ = {
 			isa = PBXGroup;
 			children = (
+				642477892AAAC12800758392 /* horse.mp3 */,
 				641AC7AA2AA8E8E40003C779 /* gym.mp3 */,
 				641AC7A02AA8E7160003C779 /* weapon.mp3 */,
 				641AC7A12AA8E7160003C779 /* gun.mp3 */,
@@ -260,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6424778A2AAAC12800758392 /* horse.mp3 in Resources */,
 				641AC7AB2AA8E8E40003C779 /* gym.mp3 in Resources */,
 				641AC7A92AA8E7160003C779 /* hasta.mp3 in Resources */,
 				641AC7A62AA8E7160003C779 /* gun.mp3 in Resources */,
